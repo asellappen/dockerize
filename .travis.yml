@@ -35,4 +35,11 @@ script:
  - export PATH=${PATH}:`go env GOPATH`/bin
  - go build -v ./...
  - go test -v ./...
- - make all 
+ - make dist-clean
+ - make dist
+ - make all
+ - make deps
+ - make dockerize
+ - make release
+
+
