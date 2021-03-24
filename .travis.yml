@@ -13,8 +13,6 @@ language: go
 
 dist : bionic
 
-
-
 arch:
    - amd64
    - ppc64le
@@ -30,6 +28,6 @@ sudo: false
 install: true
 
 script:
-
+ - export PATH=${PATH}:`go env GOPATH`/bin
  - go build -v ./...
  - go test -v ./...
