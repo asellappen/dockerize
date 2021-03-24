@@ -13,6 +13,13 @@ language: go
 
 dist : bionic
 
+
+addons:
+  apt:
+    update: true
+    packages:
+      - gojq
+      - tail
 arch:
    - amd64
    - ppc64le
