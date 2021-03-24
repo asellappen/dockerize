@@ -21,18 +21,16 @@ go:
   - "1.15.x"
   - "1.14.x"
 
-- export GOOS="linux" 
-- export GOARCH="ppc64le"
-- export LDFLAGS=-lm
 sudo: false
 
 before_scripts:
   - go get github.com/hpcloud/tail/...
   - go get github.com/jwilder/gojq/...
   - go get golang.org/x/net/context/...
- 
-install: true
-
+  - export GOOS="linux" 
+  - export GOARCH="ppc64le"
+  - export LDFLAGS=-lm
+  
 script:
  - export PATH=${PATH}:`go env GOPATH`/bin
  - go build -v ./...
