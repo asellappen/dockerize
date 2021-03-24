@@ -27,19 +27,11 @@ before_scripts:
   - go get github.com/hpcloud/tail/...
   - go get github.com/jwilder/gojq/...
   - go get golang.org/x/net/context/...
-  - export GOOS="linux" 
-  - export GOARCH="ppc64le"
-  - export LDFLAGS=-lm
   
 script:
  - export PATH=${PATH}:`go env GOPATH`/bin
  - go build -v ./...
  - go test -v ./...
- - make dist-clean
- - make dist
- - make all
- - make deps
- - make dockerize
- - make release
+
 
 
