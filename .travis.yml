@@ -21,7 +21,9 @@ go:
   - "1.15.x"
   - "1.14.x"
 
-
+- export GOOS="linux" 
+- export GOARCH="ppc64le"
+- export LDFLAGS=-lm
 sudo: false
 
 before_scripts:
