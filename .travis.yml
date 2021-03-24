@@ -11,7 +11,8 @@
 # ----------------------------------------------------------------------------
 language: go
 
-    
+dist : bionic
+
 go_import_path: github.com/hpcloud/tail
 go_import_path: github.com/jwilder/gojq
 go_import_path: golang.org/x/net/context
