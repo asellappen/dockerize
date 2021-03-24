@@ -24,7 +24,8 @@ go:
 
 sudo: false
 
-
+before_scripts:
+  - go get github.com/hpcloud/tail/...
 install: true
 
 script:
