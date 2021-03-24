@@ -12,7 +12,9 @@
 language: go
 
     
-go_import_path: github.com/hpcloud/tail
+go_import_path: 
+  - github.com/hpcloud/tail
+  - github.com/jwilder/gojq
 
 arch:
    - amd64
