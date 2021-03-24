@@ -36,6 +36,4 @@ script:
  - go build -v ./...
  - go test -v ./...
  - make ..
- - make dockerize
- - make test
- - make build
+ - make dockerize test
