@@ -11,9 +11,6 @@
 # ----------------------------------------------------------------------------
 language: go
 
-addons:
-  apt:
-    packages: tail  
     
 go_import_path: github.com/hpcloud/tail
 
